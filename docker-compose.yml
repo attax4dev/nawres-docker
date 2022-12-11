@@ -1,5 +1,5 @@
 # Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
-version: '3.7'
+version: '3.3'
 
 # Define services
 services:
@@ -25,7 +25,7 @@ services:
   # Frontend Service 
   app-client:
     build:
-      context: OreedooFrontEnd # Use an image built from the specified dockerfile in the `angular-11-social-login` directory.
+      context: OoredooFrontEnd # Use an image built from the specified dockerfile in the `angular-11-social-login` directory.
       dockerfile: Dockerfile
     ports:
       - "8081:80" # Map the exposed port 80 on the container to port 8081 on the host machine
